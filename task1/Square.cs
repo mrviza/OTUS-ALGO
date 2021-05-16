@@ -33,7 +33,6 @@ class Square
     public Square(int spellNumber)
     {
         var spell = getSpell(spellNumber);
-        Console.WriteLine(Math.Sin(16 /3));
         paintSqare(spell);
     }
     private void paintSqare(Func<int, int, bool> spell)
@@ -42,7 +41,6 @@ class Square
         {
             for (int x = 0; x < 25; x++)
             {
-                // spell(x, y);
                 Console.Write(spell(x, y) ? "#" : ".");
             }
 
